@@ -1,14 +1,14 @@
 import "./GalleryCard.css"
-import toBeRenderedFigures from "./helper/galleryCardHelper"
+import getToBeRenderedFigures from "./helper/galleryCardHelper"
 
 
-const GalleryCard = () => {
+const GalleryCard = (props) => {
 
 
 
          return (
                   <article className="galleryCard">
-                           {toBeRenderedFigures}
+                           {getToBeRenderedFigures(props.items)}
                   </article>
          )
 }

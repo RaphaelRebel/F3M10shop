@@ -7,6 +7,10 @@
          grid-template-rows: 25% 25% 25% 25%;
 }
 
+.galleryCard:nth-child(1){
+         margin-top: min(10rem, 10vh);
+}
+
 .galleryCard__figure{
          height: 100%;
          width: 100%;

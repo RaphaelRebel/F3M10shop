@@ -25,7 +25,7 @@ function getToBeRenderedFigures(drinks){
                   iterator += 1;
          
                   return (
-                           <figure className={classToBeAdded}>
+                           <figure key={drink.img} className={classToBeAdded}>
                                     <img className="galleryCard__img" src={drink.image} alt={drink.alt} />
                            </figure>
                   )

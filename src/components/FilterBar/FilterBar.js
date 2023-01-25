@@ -24,12 +24,12 @@ const FilterBar = ({ onFilter }) => {
          }, [])
 
          const toBeRenderedLabels = labels.map(label => {
-                  let input = <input unchecked onChange={() => filterItem(label.name)} type="checkbox" name={label.name} id={label.name} className="filterBar__checkbox" />
+                  let input = <input  onChange={() => filterItem(label.name)} type="checkbox" name={label.name} id={label.name} className="filterBar__checkbox" />
                   if(label.checked){
                            input = <input checked onChange={() => filterItem(label.name)} type="checkbox" name={label.name} id={label.name} className="filterBar__checkbox" />
                   }
                 return ( <>
-                           <section className="filterBarInputWrapper">
+                           <section key={label.name} className="filterBarInputWrapper">
                                     {input}
                                     <label htmlFor={label.name}>{label.name}</label>
                            </section>

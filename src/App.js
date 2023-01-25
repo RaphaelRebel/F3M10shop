@@ -13,7 +13,7 @@ function App() {
     let types = ["wijn", "wiskey", "bier"]
     
     const galleryCardsToBeRendered = itemsFromDataFile.map(collection => {
-      let temp = <GalleryCard type={types[i]} items={collection} />
+      let temp = <GalleryCard key={types[i]} type={types[i]} items={collection} />
       i = i + 1;
       return temp
     })
@@ -22,7 +22,8 @@ function App() {
   }, [])
 
   const onFilter = (typeToBeFiltered) => {
-    const cardsToBeRendered = defaultItems.filter(card => {
+    const copy = [...defaultItems]
+    const cardsToBeRendered = copy.filter(card => {
       if(card.props.type === typeToBeFiltered){
         return card
       }

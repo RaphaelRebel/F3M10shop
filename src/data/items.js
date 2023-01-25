@@ -22,8 +22,8 @@ import bier5 from "../img/bier5.webp"
 import bier6 from "../img/bier6.webp"
 import bier7 from "../img/bier7.webp"
 
-const items = {
-         wijn: [
+const items = [
+        [
                   {
                            name: "Default wijn 1",
                            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat corporis aspernatur perferendis libero natus in. Accusantium a, corporis, perferendis id dignissimos obcaecati possimus autem ullam placeat alias suscipit voluptatibus laudantium.",
@@ -67,7 +67,7 @@ const items = {
                            alt: "Default alt, must change!",
                   },
          ],
-         wiskey: [
+         [
                   {
                            name: "Default wiskey 1",
                            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat corporis aspernatur perferendis libero natus in. Accusantium a, corporis, perferendis id dignissimos obcaecati possimus autem ullam placeat alias suscipit voluptatibus laudantium.",
@@ -111,7 +111,7 @@ const items = {
                            alt: "Default alt, must change!", 
                   },
          ],
-         bier: [
+        [
                   {
                            name: "Default bier 1",
                            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat corporis aspernatur perferendis libero natus in. Accusantium a, corporis, perferendis id dignissimos obcaecati possimus autem ullam placeat alias suscipit voluptatibus laudantium.",
@@ -155,6 +155,6 @@ const items = {
                            alt: "Default alt, must change!", 
                   },
          ]
-}
+]
 
 export default items

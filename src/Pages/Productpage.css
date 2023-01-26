@@ -17,7 +17,7 @@
     padding: 2rem;
     display: grid;
     grid-template-columns: 20% 20% 30% 30%;
-    gap: 20px;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -46,4 +46,21 @@
     background: white;
     border: 0.2rem solid #9796f0;
     color: #9796f0
+}
+
+
+@media screen and (max-width: 81.25rem){
+    .productpage{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 50rem){
+    .productpage__listItem{
+        min-height: 120rem;
+        grid-template-columns: 100%;
+       
+    }
 }

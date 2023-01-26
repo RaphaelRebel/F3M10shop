@@ -37,7 +37,7 @@
          color: white;
          background: linear-gradient(to right, #fbc7d4, #9796f0);
          box-shadow: 0 0.1rem 0.5rem 0 rgba(0, 0, 0, 0.4) ;
-
+    text-transform: capitalize;
 }
 
 .filterBarInputWrapper > label:hover{

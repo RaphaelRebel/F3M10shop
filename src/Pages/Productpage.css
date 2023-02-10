@@ -48,6 +48,16 @@
     color: #9796f0
 }
 
+.productPage__counter{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100rem;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (max-width: 81.25rem){
     .productpage{

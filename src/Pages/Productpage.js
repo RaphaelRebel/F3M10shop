@@ -18,7 +18,7 @@ const Productpage = (props) => {
 
     const cardClicked = (event) => {
         if(event){
-            setCounter = counter + 1
+            setCounter(counter + 1)
             console.log(counter)
         }
     }
